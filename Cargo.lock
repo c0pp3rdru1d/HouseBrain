@@ -45,11 +45,14 @@ dependencies = [
  "db",
  "domain",
  "dotenvy",
+ "serde",
+ "sqlx",
  "thiserror",
  "tokio",
  "tower-http",
  "tracing",
  "tracing-subscriber",
+ "uuid",
 ]
 
 [[package]]
@@ -262,6 +265,7 @@ dependencies = [
 name = "db"
 version = "0.1.0"
 dependencies = [
+ "domain",
  "sqlx",
  "thiserror",
  "time",
